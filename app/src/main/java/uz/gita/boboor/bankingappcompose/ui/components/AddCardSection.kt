@@ -16,10 +16,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import uz.gita.boboor.bankingappcompose.R
+import uz.gita.boboor.bankingappcompose.presentation.circleRoundedFont
 import uz.gita.boboor.bankingappcompose.ui.theme.background
 import uz.gita.boboor.bankingappcompose.ui.theme.blue
 
@@ -34,7 +36,7 @@ fun AddCardSection() {
     Column(
         modifier = Modifier
 //            .aspectRatio(12 / 3.5f)
-            .height(100.dp)
+            .height(120.dp)
             .fillMaxWidth()
             .padding(horizontal = 32.dp)
             .background(background, RoundedCornerShape(16.dp))
@@ -46,6 +48,8 @@ fun AddCardSection() {
             text = "Karta qo'shish",
             color = Color.White,
             fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            fontFamily = circleRoundedFont
         )
 
         Spacer(modifier = Modifier.height(16.dp))

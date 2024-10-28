@@ -64,6 +64,7 @@ import uz.gita.boboor.bankingappcompose.presentation.circleRoundedFont
 import uz.gita.boboor.bankingappcompose.ui.components.CardsSection
 import uz.gita.boboor.bankingappcompose.ui.components.PaymentInput
 import uz.gita.boboor.bankingappcompose.ui.components.Stories
+import uz.gita.boboor.bankingappcompose.ui.components.previewCard
 import uz.gita.boboor.bankingappcompose.ui.theme.background
 import uz.gita.boboor.bankingappcompose.ui.theme.blue
 import uz.gita.boboor.bankingappcompose.utils.ServiceData
@@ -179,32 +180,6 @@ fun MainScreenContent() {
 
             Header()
             Box {
-//                Column(
-//                    modifier = Modifier
-//                        .aspectRatio(16 / 10f)
-//                ) {
-//
-//                }
-//                Column(
-//                    modifier = Modifier
-//                        .aspectRatio(16 / 10f)
-//                ) {
-//
-//                }
-
-                Column(
-                    modifier = Modifier
-                        .aspectRatio(16 / 10f)
-                        .graphicsLayer {
-                            alpha = overlayAlpha
-                        }
-
-                ) {
-                    Spacer(modifier = Modifier.height(32.dp))
-//                    AddCardSection()
-                    CardsSection(emptyList())
-                }
-
                 LazyColumn(
                     modifier = Modifier.fillMaxSize(),
                     state = listState,
@@ -252,6 +227,17 @@ fun MainScreenContent() {
                     item {
                         PaymentOnSpot()
                     }
+                }
+                Column(
+                    modifier = Modifier
+                        .aspectRatio(16 / 10f)
+                        .graphicsLayer {
+                            alpha = overlayAlpha
+                        }
+
+                ) {
+                    Spacer(modifier = Modifier.height(32.dp))
+                    CardsSection(listOf(previewCard, previewCard, previewCard, ))
                 }
             }
 
