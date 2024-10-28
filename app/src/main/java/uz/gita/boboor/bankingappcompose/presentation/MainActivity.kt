@@ -22,6 +22,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uz.gita.boboor.bankingappcompose.R
+import uz.gita.boboor.bankingappcompose.presentation.add_card.AddCardScreen
 import uz.gita.boboor.bankingappcompose.presentation.splash.SplashScreen
 import uz.gita.boboor.bankingappcompose.ui.navigation.NavigationHandler
 import uz.gita.boboor.bankingappcompose.ui.theme.background

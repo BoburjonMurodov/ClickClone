@@ -16,11 +16,14 @@ interface AddCardContract {
     }
 
     interface Direction {
-
+        suspend fun moveToAddCardVerify()
     }
 
     sealed interface Actions {
-
+        data class PanChange(val pan: String) : Actions
+        data class NameChange(val name: String) : Actions
+        data class DataChange(val date: String) : Actions
+        data object AddCard : Actions
     }
 
     data class UiState(
