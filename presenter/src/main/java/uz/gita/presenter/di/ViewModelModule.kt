@@ -7,6 +7,7 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 import dagger.multibindings.IntoMap
+import uz.gita.presenter.screens.add_card.AddCardViewModel
 import uz.gita.presenter.screens.language.LanguageVM
 import uz.gita.presenter.screens.login.LoginScreenVM
 import uz.gita.presenter.screens.main.MainScreenVM
@@ -65,5 +66,10 @@ internal interface ViewModelModule {
     @Binds
     @ScreenModelKey(MainScreenVM::class)
     fun bindMainScreenViewModel(impl: MainScreenVM): ScreenModel
+
+    @IntoMap
+    @Binds
+    @ScreenModelKey(AddCardViewModel::class)
+    fun bindLanguageViewModel(impl: AddCardViewModel): ScreenModel
 }
 
