@@ -23,7 +23,11 @@ interface AddCardContract {
 
     }
 
-    data class UiState(val name: String)
+    data class UiState(
+        val name: String = "",
+        val date: String = "",
+        val pan: String = ""
+    )
 
     sealed interface SideEffect {
 
