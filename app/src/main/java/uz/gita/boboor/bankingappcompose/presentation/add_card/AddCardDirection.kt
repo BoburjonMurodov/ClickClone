@@ -9,5 +9,7 @@ import javax.inject.Inject
  */
 
 class AddCardDirection @Inject constructor(private val appNavigator: AppNavigator) : AddCardContract.Direction {
+    override suspend fun moveToAddCardVerify() {
 
+    }
 }
