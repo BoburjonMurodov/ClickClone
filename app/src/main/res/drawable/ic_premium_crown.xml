@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer rounded shape with angled corners -->
+    <path
+        android:fillColor="#FBC02D"
+        android:pathData="M12,2C16,2 18.5,4 21,7C22,9 22,13 21,15C18.5,18 16,20 12,20C8,20 5.5,18 3,15C2,13 2,9 3,7C5.5,4 8,2 12,2Z"/>
+
+    <!-- Crown shape -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M7,13L9,8L11.5,11L12.5,11L15,8L17,13L12,16Z"/>
+
+</vector>

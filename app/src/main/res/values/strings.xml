@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Banking App Compose</string>
+    <string name="avtorisation">Autorisation</string>
+    <string name="enter_click_pin">Enter Click-Pin</string>
+    <string name="create_click_pin">Create Click-Pin</string>
+    <string name="wrong_password">Wrong Click-Pin please try again</string>
+    <string name="wrong_verify">Pin doesn\'t match</string>
+    <string name="verify_click_pin">Verify Click-Pin</string>
+</resources>

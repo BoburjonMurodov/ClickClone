@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Banking App Compose</string>
+    <string name="avtorisation">Avtorizatsiya</string>
+    <string name="enter_click_pin">Click-Pinni kiriting</string>
+    <string name="create_click_pin">Click-Pin yarating</string>
+    <string name="wrong_password">Click-Pin notog\'ri terildi iltimos qaytadan tering</string>
+    <string name="wrong_verify">Pin mos kelmadi!</string>
+    <string name="verify_click_pin">Click-Pinni tasdiqlang</string>
+</resources>
