@@ -200,6 +200,7 @@ fun MainScreenContent() {
 
                 ) {
                     Spacer(modifier = Modifier.height(32.dp))
+
                     AddCardSection()
                 }
 
@@ -303,33 +304,6 @@ fun Header() {
     }
 }
 
-@Composable
-fun AddCardSection() {
-    Column(
-        modifier = Modifier
-            .aspectRatio(12 / 3.5f)
-            .padding(horizontal = 32.dp)
-            .background(background, RoundedCornerShape(16.dp))
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        Text(
-            text = "Karta qo'shish",
-            color = Color.White,
-            fontSize = 20.sp,
-        )
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Icon(
-            painter = painterResource(id = R.drawable.ic_add_cricle),
-            contentDescription = null,
-            tint = blue
-        )
-
-    }
-}
 
 
 @Composable
