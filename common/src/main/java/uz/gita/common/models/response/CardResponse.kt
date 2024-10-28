@@ -7,7 +7,7 @@ package uz.gita.common.models.response
 
 
 sealed interface CardResponse {
-    data class GetCardSuccess(val list: List<GetCardSuccessItem>) : CardResponse
+    data class GetCardSuccess(val list: List<CardModel>) : CardResponse
 
     data class Success(val message: String) : CardResponse
     data class Error(val message: String) : CardResponse

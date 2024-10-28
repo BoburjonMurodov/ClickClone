@@ -61,6 +61,7 @@ import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.onEach
 import uz.gita.boboor.bankingappcompose.R
 import uz.gita.boboor.bankingappcompose.presentation.circleRoundedFont
+import uz.gita.boboor.bankingappcompose.ui.components.CardsSection
 import uz.gita.boboor.bankingappcompose.ui.components.PaymentInput
 import uz.gita.boboor.bankingappcompose.ui.components.Stories
 import uz.gita.boboor.bankingappcompose.ui.theme.background
@@ -200,8 +201,8 @@ fun MainScreenContent() {
 
                 ) {
                     Spacer(modifier = Modifier.height(32.dp))
-
-                    AddCardSection()
+//                    AddCardSection()
+                    CardsSection(emptyList())
                 }
 
                 LazyColumn(
@@ -305,7 +306,6 @@ fun Header() {
 }
 
 
-
 @Composable
 fun ActionRow() {
     Row(
@@ -336,7 +336,6 @@ fun ActionRow() {
         Spacer(modifier = Modifier.width(16.dp))
     }
 }
-
 
 
 @Composable
