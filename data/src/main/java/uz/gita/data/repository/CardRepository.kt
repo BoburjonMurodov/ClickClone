@@ -6,7 +6,7 @@ import uz.gita.common.models.response.CardResponse
 
 
 /*
-    Created by Boburjon Murodov 27/10/24 at 19:17
+*    Created by Boburjon Murodov 27/10/24 at 19:17
 */
 
 interface CardRepository {

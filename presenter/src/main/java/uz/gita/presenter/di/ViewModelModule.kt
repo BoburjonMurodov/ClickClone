@@ -9,6 +9,7 @@ import dagger.hilt.android.components.ActivityComponent
 import dagger.multibindings.IntoMap
 import uz.gita.presenter.screens.language.LanguageVM
 import uz.gita.presenter.screens.login.LoginScreenVM
+import uz.gita.presenter.screens.main.MainScreenVM
 import uz.gita.presenter.screens.pin.PasswordScreenVM
 import uz.gita.presenter.screens.register.RegisterScreenVM
 import uz.gita.presenter.screens.signin_verify.SignInVerifyVM
@@ -59,5 +60,10 @@ internal interface ViewModelModule {
     @Binds
     @ScreenModelKey(PasswordScreenVM::class)
     fun bindPasswordScreenViewModel(impl: PasswordScreenVM): ScreenModel
+
+    @IntoMap
+    @Binds
+    @ScreenModelKey(MainScreenVM::class)
+    fun bindMainScreenViewModel(impl: MainScreenVM): ScreenModel
 }
 
