@@ -1,5 +1,6 @@
 package uz.gita.boboor.bankingappcompose.presentation.add_card
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -27,7 +28,9 @@ object AddCardScreen : Screen {
 
 @Composable
 private fun AddCardScreenContent(states: State<AddCardContract.UiState>, onActions: (AddCardContract.Actions) -> Unit) {
+    Column {
 
+    }
 }
 
 @Preview(showBackground = true)
