@@ -3,7 +3,7 @@ package uz.gita.common.models.response
 
 import com.google.gson.annotations.SerializedName
 
-data class GetCardSuccessItem(
+data class CardModel(
     @SerializedName("amount")
     val amount: Int,
     @SerializedName("expired-month")
