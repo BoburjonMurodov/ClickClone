@@ -22,6 +22,8 @@ import uz.gita.presenter.screens.splash.SplashScreenVM
     Created by Boburjon Murodov 17/10/24 at 18:51
 */
 
+
+
 @Module
 @InstallIn(ActivityComponent::class)
 
@@ -70,6 +72,6 @@ internal interface ViewModelModule {
     @IntoMap
     @Binds
     @ScreenModelKey(AddCardViewModel::class)
-    fun bindLanguageViewModel(impl: AddCardViewModel): ScreenModel
+    fun bindLAddCardScreenViewModel(impl: AddCardViewModel): ScreenModel
 }
 
