@@ -44,7 +44,7 @@ internal class AuthAuthenticator @Inject constructor(
             }
             if (token == null) {
                 runBlocking {
-                    TODO()
+//                    TODO()
                 }
             }
             return if (token != null) response.request.newBuilder()

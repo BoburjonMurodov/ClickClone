@@ -75,14 +75,11 @@ class MainScreen : Screen {
     }
 }
 
-
-
 @Composable
 @Preview
 fun PreviewMainScreen() {
     MainScreenContent()
 }
-
 
 
 @SuppressLint("RememberReturnType")
